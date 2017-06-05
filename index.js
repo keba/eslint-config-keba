@@ -518,7 +518,7 @@ module.exports = {
     ],
     'no-unused-vars': [
       // disallow unused variables [recommended]
-      'error',
+      'warn',
       {
         vars: 'all',
         args: 'after-used'
@@ -662,7 +662,7 @@ module.exports = {
       // enforce the consistent use of either `function` declarations or expressions
       'error',
       'declaration',
-      {allowArrowFunctions: false}
+      {allowArrowFunctions: true}
     ],
     'id-blacklist': [
       // blacklist specified identifiers
@@ -689,7 +689,7 @@ module.exports = {
     'id-match': [
       // require identifiers to match the provided regular expression
       'error',
-      '^((([$A-Za-z]+)([A-Za-z0-9]+)*)|_)$',
+      '^((([$A-Za-z]+)([A-Za-z0-9_-]+)*([A-Za-z0-9]))|_)$',
       {properties: false}
     ],
     indent: [
@@ -1198,7 +1198,7 @@ module.exports = {
     'object-shorthand': [
       // require or disallow method and property shorthand syntax for object literals
       'error',
-      'never'
+      'always'
     ],
     'prefer-arrow-callback': [
       // require arrow functions as callbacks
