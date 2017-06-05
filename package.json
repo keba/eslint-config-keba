@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-keba-web",
+  "version": "1.0.0",
+  "description": "An ESLint config alternative I use",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keba/eslint-config-keba-web.git"
+  },
+  "author": "keba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keba/eslint-config-keba-web/issues"
+  },
+  "homepage": "https://github.com/keba/eslint-config-keba-web#readme",
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "=3.19.0",
+    "eslint-plugin-react": "=7.0.1"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "=3.19.0",
+    "eslint-plugin-react": "=7.0.1"
+  },
+  "engines": {
+    "node": ">= 6"
+  }
+}
