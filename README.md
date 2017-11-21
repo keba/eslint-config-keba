@@ -7,8 +7,11 @@ This is a full listing of the current ESLint config which I periodically keep up
 
 You may hate it. If you do hate the styling, don't use it  :)
 
+## Changes
+Please reference the [changes.md](/changes.md) file.
+
 ### License
 
-Copyright 2017 Keba
+Copyright 2017 keba
 
 MIT License
