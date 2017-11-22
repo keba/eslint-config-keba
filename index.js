@@ -782,7 +782,7 @@ module.exports = {
             // enforce consistent line breaks inside function parentheses
             'error',
             {
-                minItems: 5
+                minItems: 8
             }
         ],
         'id-blacklist': [
@@ -820,7 +820,7 @@ module.exports = {
             'error',
             4,
             {
-                SwitchCase: 0,
+                SwitchCase: 1,
                 VariableDeclarator: {
                     'var': 2,
                     let: 2,
@@ -1347,8 +1347,8 @@ module.exports = {
             // enforce consistent spacing around `*` operators in generator functions [fixable]
             'error',
             {
-                before: true,
-                after: false
+                before: false,
+                after: true
             }
         ],
         'no-class-assign': [
@@ -1482,60 +1482,6 @@ module.exports = {
                 after: false
             }
         ]
-    },
-
-    ecmaFeatures: {
-        arrowFunctions: false,
-        // enable arrow functions
-        binaryLiterals: false,
-        // enable binary literals
-        blockBindings: false,
-        // enable let and const (aka block bindings)
-        classes: false,
-        // enable classes
-        defaultParams: false,
-        // enable default function parameters
-        destructuring: false,
-        // enable destructuring
-        ecmaVersion: 6,
-        forOf: false,
-        // enable for-of loops
-        generators: false,
-        // enable generators
-        jsx: true,
-        // enable JSX
-        modules: false,
-        // enable modules and global strict mode
-        objectLiteralComputedProperties: false,
-        // enable computed object literal property names
-        objectLiteralDuplicateProperties: false,
-        // enable duplicate object literal properties in strict mode
-        objectLiteralShorthandMethods: false,
-        // enable object literal shorthand methods
-        objectLiteralShorthandProperties: false,
-        // enable object literal shorthand properties
-        octalLiterals: false,
-        // enable octal literals
-        regexUFlag: false,
-        // enable the regular expression u flag
-        regexYFlag: false,
-        // enable the regular expression y flag
-        restParams: false,
-        // enable the rest parameters
-        spread: false,
-        // enable the `spread operator` for arrays
-        sourceType: 'module',
-        superInFunctions: false,
-        // enable `super` references inside of functions
-        templateStrings: false,
-        // enable template strings
-        unicodeCodePointEscapes: false,
-        // enable code point escapes
-        globalReturn: false,
-        // allow `return` statements in the global scope
-        impliedStrict: true,
-        experimentalObjectRestSpread: false
-        // enable experimental support - not going to happen.
     },
 
     env: {
