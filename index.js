@@ -668,7 +668,7 @@ module.exports = {
             'error',
             {
                 multiline: true,
-                minItems: 3
+                minItems: null
             }
         ],
         'array-bracket-spacing': [
@@ -686,7 +686,7 @@ module.exports = {
             'error',
             {
                 multiline: true,
-                minItems: 1
+                minItems: null
             }
         ],
         'block-spacing': [
