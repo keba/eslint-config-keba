@@ -686,7 +686,7 @@ module.exports = {
             'error',
             {
                 multiline: true,
-                minItems: null
+                minItems: 2
             }
         ],
         'block-spacing': [
@@ -822,9 +822,9 @@ module.exports = {
             {
                 SwitchCase: 1,
                 VariableDeclarator: {
-                    'var': 2,
-                    let: 2,
-                    'const': 2
+                    'var': 1,
+                    let: 1,
+                    'const': 1
                 },
                 outerIIFEBody: 1,
                 MemberExpression: 1,
