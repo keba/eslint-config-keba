@@ -817,7 +817,7 @@ module.exports = {
         ],
         indent: [
             // enforce consistent indentation [fixable]
-            'error',
+            'off',
             4,
             {
                 SwitchCase: 1,
