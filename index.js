@@ -177,7 +177,10 @@ module.exports = {
         ],
         'array-callback-return': [
             // enforce `return` statements in callbacks of array methods
-            'error'
+            'error',
+            {
+                allowImplicit: false
+            }
         ],
         'block-scoped-var': [
             // enforce the use of variables within the scope they are defined
@@ -1158,7 +1161,7 @@ module.exports = {
             // enforce placing object properties on separate lines
             'error',
             {
-                allowMultiplePropertiesPerLine: false
+                allowMultiplePropertiesPerLine: true
             }
         ],
         'one-var': [
@@ -1167,7 +1170,8 @@ module.exports = {
             {
                 'var': 'never',
                 let: 'never',
-                'const': 'never'
+                'const': 'never',
+                separateRequires: true
             }
         ],
         'one-var-declaration-per-line': [

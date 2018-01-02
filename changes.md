@@ -1,5 +1,8 @@
 # Changes
 
+### 1.1.5
+- consistency for multi-line in `object-property-newline` enabled
+
 ### 1.1.4
 - turned off `indent` as it refuses to play well with WebStorm standard code style preferences
 
