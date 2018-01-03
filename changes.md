@@ -1,5 +1,8 @@
 # Changes
 
+### 1.1.6
+- minItems 5 for `array-element-newline`
+
 ### 1.1.5
 - consistency for multi-line in `object-property-newline` enabled
 
