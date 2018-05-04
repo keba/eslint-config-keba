@@ -1,5 +1,8 @@
 # Changes
 
+### 1.2.0
+- updated to current eslint rules
+
 ### 1.1.6
 - minItems 5 for `array-element-newline`
 
