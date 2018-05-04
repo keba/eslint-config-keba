@@ -338,7 +338,7 @@ module.exports = {
         ],
         'no-loop-func': [
             // disallow `function` declarations and expressions inside loop statements
-            'error'
+            'off'
         ],
         'no-magic-numbers': [
             // disallow magic numbers
@@ -758,7 +758,7 @@ module.exports = {
         ],
         'function-paren-newline': [
             // enforce consistent line breaks inside function parentheses
-            'error',
+            'off',
             {
                 minItems: 8
             }
