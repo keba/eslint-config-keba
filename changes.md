@@ -1,5 +1,8 @@
 # Changes
 
+### 1.2.1
+- turned off `no-loop-func` and `function-paren-newline`
+
 ### 1.2.0
 - updated to current eslint rules
 
