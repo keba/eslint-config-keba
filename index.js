@@ -24,7 +24,7 @@ module.exports = {
         ],
         'no-await-in-loop': [
             // disallow `await` inside of loops
-            'error'
+            'off'
         ],
         'no-compare-neg-zero': [
             // disallow comparing against -0
@@ -419,7 +419,7 @@ module.exports = {
         ],
         'no-return-await': [
             // disallows unnecessary `return await`
-            'error'
+            'off'
         ],
         'no-script-url': [
             // disallow `javascript:` urls
@@ -791,6 +791,10 @@ module.exports = {
             {
                 properties: false
             }
+        ],
+        'implicit-arrow-linebreak': [
+            // enforce the location of arrow function bodies
+            'error', 'beside'
         ],
         indent: [
             // enforce consistent indentation [fixable]
