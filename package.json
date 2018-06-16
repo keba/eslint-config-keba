@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-keba-web",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "An ESLint config alternative I use",
     "main": "index.js",
     "repository": {
@@ -16,12 +16,12 @@
     "dependencies": {
         "babel-eslint": ">=8.2.3",
         "eslint": ">=4.19.1",
-        "eslint-plugin-react": ">=7.7.0"
+        "eslint-plugin-react": ">=7.9.1"
     },
     "peerDependencies": {
         "babel-eslint": ">=8.2.3",
         "eslint": ">=4.19.1",
-        "eslint-plugin-react": ">=7.7.0"
+        "eslint-plugin-react": ">=7.9.1"
     },
     "scripts": {
         "test": "./node_modules/eslint/bin/eslint.js -c package.json **/*.js",

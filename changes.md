@@ -1,5 +1,8 @@
 # Changes
 
+### 1.2.2
+- minItems 2 for `array-element-newline`
+
 ### 1.2.1
 - turned off `no-loop-func` and `function-paren-newline`
 

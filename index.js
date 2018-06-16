@@ -669,7 +669,7 @@ module.exports = {
             'error',
             {
                 multiline: true,
-                minItems: 5
+                minItems: 2
             }
         ],
         'block-spacing': [
