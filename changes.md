@@ -1,5 +1,11 @@
 # Changes
 
+### 1.2.3
+- `sort-imports` now off
+- fixed eslint errors caused by v1.2.2
+- removed eslint-plugin-react
+- added array examples to test.js
+
 ### 1.2.2
 - minItems 2 for `array-element-newline`
 

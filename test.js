@@ -5,10 +5,26 @@ async function test() {
         return orOther;
     }
 
-    const someKeys = ['one', 'two', 'three'];
+    const oneKey = ['one'];
+    const twoKeys = [
+        'one',
+        'two'
+    ];
+    const someKeys = [
+        'one',
+        'two',
+        'three'
+    ];
+    for (let keyName of oneKey) {
+        console.log(keyName); // eslint-disable-line no-console
+    }
+    for (let keyName of twoKeys) {
+        console.log(keyName); // eslint-disable-line no-console
+    }
     for (let keyName of someKeys) {
         console.log(keyName); // eslint-disable-line no-console
     }
+
     return await something('a value', (boolean) => {
         if (boolean === true) {
             return 'yay';

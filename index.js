@@ -32,7 +32,8 @@ module.exports = {
         ],
         'no-cond-assign': [
             // disallow assignment operators in conditional expressions [recommended, fixable]
-            'error', 'except-parens'
+            'error',
+            'except-parens'
         ],
         'no-console': [
             // disallow use of `console` [recommended]
@@ -80,7 +81,8 @@ module.exports = {
         ],
         'no-extra-parens': [
             // disallow unnecessary parentheses
-            'error', 'all'
+            'error',
+            'all'
         ],
         'no-extra-semi': [
             // disallow unnecessary semicolons [recommended, fixable]
@@ -92,7 +94,8 @@ module.exports = {
         ],
         'no-inner-declarations': [
             // disallow `function` or `var` declarations in nested blocks [recommended]
-            'error', 'functions'
+            'error',
+            'functions'
         ],
         'no-invalid-regexp': [
             // disallow invalid regular expression strings in `RegExp` constructors [recommended]
@@ -192,7 +195,8 @@ module.exports = {
         ],
         complexity: [
             // enforce a maximum cyclomatic complexity allowed in a program
-            'off', 10
+            'off',
+            10
         ],
         'consistent-return': [
             // require `return` statements to either always or never specify values
@@ -200,7 +204,8 @@ module.exports = {
         ],
         curly: [
             // enforce consistent brace style for all control statements
-            'error', 'all'
+            'error',
+            'all'
         ],
         'default-case': [
             // require `default` case in `switch` statements
@@ -208,7 +213,8 @@ module.exports = {
         ],
         'dot-location': [
             // enforce consistent newlines before and after dots
-            'error', 'property'
+            'error',
+            'property'
         ],
         'dot-notation': [
             // enforce dot notation whenever possible
@@ -220,7 +226,8 @@ module.exports = {
         ],
         eqeqeq: [
             // require the use of `===` and `!==`
-            'error', 'smart'
+            'error',
+            'smart'
         ],
         'guard-for-in': [
             // require `for-in` loops to include an `if` statement
@@ -415,7 +422,8 @@ module.exports = {
         ],
         'no-return-assign': [
             // disallow assignment operators in `return` statements
-            'error', 'always'
+            'error',
+            'always'
         ],
         'no-return-await': [
             // disallows unnecessary `return await`
@@ -498,7 +506,8 @@ module.exports = {
         ],
         radix: [
             // enforce the consistent use of the radix argument when using `parseInt()`
-            'error', 'as-needed'
+            'error',
+            'as-needed'
         ],
         'require-await': [
             // disallow async functions which have no `await`
@@ -510,7 +519,8 @@ module.exports = {
         ],
         'wrap-iife': [
             // require parentheses around immediate `function` invocations
-            'error', 'any'
+            'error',
+            'any'
         ],
         yoda: [
             // require or disallow "Yoda" conditions
@@ -526,14 +536,16 @@ module.exports = {
         // These rules relate to strict mode directives
         strict: [
             // require or disallow strict mode directives
-            'error', 'safe'
+            'error',
+            'safe'
         ],
 
         // Variables
         // These rules relate to variable declarations
         'init-declarations': [
             // enforce or disallow initializations in `var` declarations
-            'error', 'always'
+            'error',
+            'always'
         ],
         'no-catch-shadow': [
             // disallow `catch` clause parameters from shadowing variables in the outer scope
@@ -549,7 +561,8 @@ module.exports = {
         ],
         'no-restricted-globals': [
             // disallow specified global variables
-            'error', 'alphabetSoup'
+            'error',
+            'alphabetSoup'
         ],
         'no-shadow': [
             // disallow `var` declarations from shadowing variables in the outer scope
@@ -597,7 +610,12 @@ module.exports = {
         // These rules relate to code running in Node.js, or in browsers with CommonJS
         'callback-return': [
             // require `return` statements after callbacks
-            'error', ['callback', 'cb', 'next']
+            'error',
+            [
+                'callback',
+                'cb',
+                'next'
+            ]
         ],
         'global-require': [
             // require `require()` to be placed at top-level module scope
@@ -605,7 +623,8 @@ module.exports = {
         ],
         'handle-callback-err': [
             // require error handling in callbacks
-            'error', '^.*(e|E)rror$'
+            'error',
+            '^.*(e|E)rror$'
         ],
         'no-buffer-constructor': [
             // disallow use of the Buffer() constructor
@@ -637,7 +656,8 @@ module.exports = {
         ],
         'no-restricted-modules': [
             // disallow specified modules when loaded by `require`
-            'error', ''
+            'error',
+            ''
         ],
         'no-sync': [
             // disallow synchronous methods
@@ -674,7 +694,8 @@ module.exports = {
         ],
         'block-spacing': [
             // enforce consistent spacing inside single-line blocks [fixable]
-            'error', 'always'
+            'error',
+            'always'
         ],
         'brace-style': [
             // enforce consistent brace style for blocks
@@ -702,7 +723,8 @@ module.exports = {
         ],
         'comma-dangle': [
             // require or disallow trailing commas
-            'error', 'never'
+            'error',
+            'never'
         ],
         'comma-spacing': [
             // enforce consistent spacing before and after comma [fixable]
@@ -726,11 +748,13 @@ module.exports = {
         ],
         'computed-property-spacing': [
             // enforce consistent spacing inside computed properties brackets [fixable]
-            'error', 'never'
+            'error',
+            'never'
         ],
         'consistent-this': [
             // enforces consistent naming when capturing the current execution context
-            'error', 'that'
+            'error',
+            'that'
         ],
         'eol-last': [
             // enforce at least one newline at the end of files [fixable]
@@ -738,7 +762,8 @@ module.exports = {
         ],
         'func-call-spacing': [
             // require or disallow spacing between function identifiers and their invocations
-            'error', 'never'
+            'error',
+            'never'
         ],
         'func-name-matching': [
             // require function names to match the name of the variable or property to which they are assigned
@@ -765,7 +790,8 @@ module.exports = {
         ],
         'id-blacklist': [
             // blacklist specified identifiers
-            'error', 'err'
+            'error',
+            'err'
         ],
         'id-length': [
             // enforce minimum and maximum identifier lengths
@@ -794,7 +820,8 @@ module.exports = {
         ],
         'implicit-arrow-linebreak': [
             // enforce the location of arrow function bodies
-            'error', 'beside'
+            'error',
+            'beside'
         ],
         indent: [
             // enforce consistent indentation [fixable]
@@ -829,7 +856,8 @@ module.exports = {
         ],
         'jsx-quotes': [
             // enforce the consistent use of either double or single quotes in JSX attributes [fixable]
-            'error', 'prefer-double'
+            'error',
+            'prefer-double'
         ],
         'key-spacing': [
             // enforce consistent spacing between keys and values in object literal properties [fixable]
@@ -854,7 +882,8 @@ module.exports = {
         ],
         'linebreak-style': [
             // enforce consistent linebreak style [fixable]
-            'error', 'unix'
+            'error',
+            'unix'
         ],
         'lines-around-comment': [
             // require empty lines around comments
@@ -882,7 +911,8 @@ module.exports = {
         ],
         'max-depth': [
             // enforce a maximum depth that blocks can be nested
-            'warn', 5
+            'warn',
+            5
         ],
         'max-len': [
             // enforce a maximum line length
@@ -898,15 +928,18 @@ module.exports = {
         ],
         'max-lines': [
             // enforce a maximum file length
-            'error', 3000
+            'error',
+            3000
         ],
         'max-nested-callbacks': [
             // specify the maximum depth callbacks can be nested
-            'error', 7
+            'error',
+            7
         ],
         'max-params': [
             // enforce a maximum number of parameters in `function` definitions
-            'off', 5
+            'off',
+            5
         ],
         'max-statements': [
             // enforce a maximum number of statements allowed in `function` blocks
@@ -929,7 +962,8 @@ module.exports = {
         ],
         'multiline-ternary': [
             // enforce newlines between operands of ternary expressions
-            'error', 'always-multiline'
+            'error',
+            'always-multiline'
         ],
         'new-cap': [
             // require constructor `function` names to begin with a capital letter
@@ -1020,8 +1054,14 @@ module.exports = {
                         '<',
                         '<='
                     ],
-                    ['&&', '||'],
-                    ['in', 'instanceof']
+                    [
+                        '&&',
+                        '||'
+                    ],
+                    [
+                        'in',
+                        'instanceof'
+                    ]
                 ],
                 allowSamePrecedence: true
             }
@@ -1064,7 +1104,9 @@ module.exports = {
         ],
         'no-restricted-syntax': [
             // disallow specified syntax
-            'off', 'FunctionExpression', 'WithStatement'
+            'off',
+            'FunctionExpression',
+            'WithStatement'
         ],
         'no-tabs': [
             // disallow all tabs
@@ -1139,19 +1181,23 @@ module.exports = {
         ],
         'one-var-declaration-per-line': [
             // require or disallow newlines around variable declarations
-            'error', 'always'
+            'error',
+            'always'
         ],
         'operator-assignment': [
             // require or disallow assignment operator shorthand where possible
-            'error', 'never'
+            'error',
+            'never'
         ],
         'operator-linebreak': [
             // enforce consistent linebreak style for operators
-            'error', 'before'
+            'error',
+            'before'
         ],
         'padded-blocks': [
             // require or disallow padding within blocks [fixable]
-            'error', 'never'
+            'error',
+            'never'
         ],
         'padding-line-between-statements': [
             // require or disallow padding lines between statements
@@ -1169,7 +1215,9 @@ module.exports = {
         ],
         quotes: [
             // enforce the consistent use of either backticks, double, or single quotes [fixable]
-            'error', 'single', 'avoid-escape'
+            'error',
+            'single',
+            'avoid-escape'
         ],
         'require-jsdoc': [
             // require JSDoc comments
@@ -1200,7 +1248,8 @@ module.exports = {
         ],
         'semi-style': [
             // enforce location of semicolons
-            'error', 'last'
+            'error',
+            'last'
         ],
         'sort-keys': [
             // require object keys to be sorted
@@ -1253,7 +1302,8 @@ module.exports = {
         ],
         'spaced-comment': [
             // enforce consistent spacing after the `//` or `/*` in a comment [fixable]
-            'warn', 'always'
+            'warn',
+            'always'
         ],
         'switch-colon-spacing': [
             // enforce spacing around colons of switch statements
@@ -1265,11 +1315,13 @@ module.exports = {
         ],
         'template-tag-spacing': [
             // require or disallow spacing between template tags and their literals
-            'error', 'always'
+            'error',
+            'always'
         ],
         'unicode-bom': [
             // require or disallow the Unicode BOM [fixable]
-            'error', 'never'
+            'error',
+            'never'
         ],
         'wrap-regex': [
             // require parenthesis around regex literals
@@ -1280,11 +1332,13 @@ module.exports = {
         // These rules relate to ES6, also known as ES2015
         'arrow-body-style': [
             // require braces in arrow function bodies
-            'error', 'always'
+            'error',
+            'always'
         ],
         'arrow-parens': [
             // require parentheses around arrow function arguments
-            'error', 'always'
+            'error',
+            'always'
         ],
         'arrow-spacing': [
             // enforce consistent spacing before and after the arrow in arrow functions [fixable]
@@ -1332,7 +1386,8 @@ module.exports = {
         ],
         'no-restricted-imports': [
             // disallow specified modules when loaded by `import`
-            'error', 'alphabetSoup'
+            'error',
+            'alphabetSoup'
         ],
         'no-this-before-super': [
             // disallow `this`/`super` before calling `super()` in constructors [recommended]
@@ -1361,7 +1416,8 @@ module.exports = {
         ],
         'object-shorthand': [
             // require or disallow method and property shorthand syntax for object literals
-            'error', 'always'
+            'error',
+            'always'
         ],
         'prefer-arrow-callback': [
             // require arrow functions as callbacks
@@ -1401,15 +1457,21 @@ module.exports = {
         ],
         'rest-spread-spacing': [
             // enforce spacing between rest and spread operators and their expressions [fixable]
-            'error', 'never'
+            'error',
+            'never'
         ],
         'sort-imports': [
             // enforce sorted import declarations within modules
-            'error',
+            'off',
             {
                 ignoreCase: true,
                 ignoreMemberSort: false,
-                memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
+                memberSyntaxSortOrder: [
+                    'none',
+                    'all',
+                    'multiple',
+                    'single'
+                ]
             }
         ],
         'symbol-description': [
@@ -1418,7 +1480,8 @@ module.exports = {
         ],
         'template-curly-spacing': [
             // require or disallow spacing around embedded expressions of template strings [fixable]
-            'error', 'never'
+            'error',
+            'never'
         ],
         'yield-star-spacing': [
             // require or disallow spacing around the `*` in `yield*` expressions [fixable]
