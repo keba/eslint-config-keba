@@ -22,24 +22,24 @@ jobs:
             exit 0
       - restore_cache:
           key: cache-{{ checksum "package.json" }}
-      - run:
-          name: update linux
-          command: |
-            apt-get update
-      - run:
-          name: upgrade linux
-          command: |
-            apt-get upgrade -y
-      - run:
-          name: versions post apt-get update
-          command: |
-            set +e
-            set +o pipefail
-            echo node:
-            node -v
-            echo npm:
-            npm -v
-            exit 0
+#      - run:
+#          name: update linux
+#          command: |
+#            apt-get update
+#      - run:
+#          name: upgrade linux
+#          command: |
+#            apt-get upgrade -y
+#      - run:
+#          name: versions post apt-get update
+#          command: |
+#            set +e
+#            set +o pipefail
+#            echo node:
+#            node -v
+#            echo npm:
+#            npm -v
+#            exit 0
       - run:
           name: npm install
           command: npm install
