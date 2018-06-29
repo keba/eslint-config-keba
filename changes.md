@@ -1,5 +1,19 @@
 # Changes
 
+### 1.3.0
+- renamed config to `eslint-config-keba` from `eslint-config-keba-web`
+- updated eslint to 5.0.1
+- added `max-classes-per-file`
+- changed `no-unused-vars` to error
+- added `max-lines-per-function`
+- added `prefer-object-spread`
+- updated globals to include `worker`, `mocha` and `protractor`
+- updated LICENSE to current year
+- updated README.md for new repo name
+- updated npm test command
+- updated `test.js` for function name now that globals are updated
+- added CircleCI config 
+
 ### 1.2.3
 - `sort-imports` now off
 - fixed eslint errors caused by v1.2.2

@@ -1,0 +1,70 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/cibuild
+  docker:
+    - image: node:8.10.0
+
+jobs:
+  build-test:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: versions pre apt-get update
+          command: |
+            set +e
+            set +o pipefail
+            echo node:
+            node -v
+            echo npm:
+            npm -v
+            exit 0
+      - restore_cache:
+          key: cache-{{ checksum "package.json" }}
+      - run:
+          name: update linux
+          command: |
+            apt-get update
+      - run:
+          name: upgrade linux
+          command: |
+            apt-get upgrade -y
+      - run:
+          name: versions post apt-get update
+          command: |
+            set +e
+            set +o pipefail
+            echo node:
+            node -v
+            echo npm:
+            npm -v
+            exit 0
+      - run:
+          name: npm install
+          command: npm install
+      - run:
+          name: make test_results dir
+          command: |
+            mkdir -p ~/test_results
+      - run:
+          name: eslint validation source
+          command: |
+            mkdir -p ~/test_results/eslint
+            ./node_modules/eslint/bin/eslint.js -c package.json */**.js --format junit --output-file ~/reports/eslint.xml
+      - store_test_results:
+          path: ~/test_results/eslint
+      - save_cache:
+          key: cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+
+workflows:
+  version: 2
+  run-all-the-things:
+    jobs:
+      - build-test:
+          filters:
+            branches:
+              ignore:
+                - notABranchName

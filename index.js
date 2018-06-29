@@ -233,6 +233,11 @@ module.exports = {
             // require `for-in` loops to include an `if` statement
             'error'
         ],
+        'max-classes-per-file': [
+            // enforce a maximum number of classes per file
+            'error',
+            1
+        ],
         'no-alert': [
             // disallow the use of `alert`, `confirm`, and `prompt`
             'error'
@@ -591,7 +596,7 @@ module.exports = {
         ],
         'no-unused-vars': [
             // disallow unused variables [recommended]
-            'warn',
+            'error',
             {
                 vars: 'all',
                 args: 'after-used'
@@ -931,6 +936,16 @@ module.exports = {
             'error',
             3000
         ],
+        'max-lines-per-function': [
+            // enforce a maximum number of lines of code in a function
+            'error',
+            {
+                max: 50,
+                skipBlankLines: true,
+                skipComments: true,
+                IIFEs: true
+            }
+        ],
         'max-nested-callbacks': [
             // specify the maximum depth callbacks can be nested
             'error',
@@ -1202,6 +1217,10 @@ module.exports = {
         'padding-line-between-statements': [
             // require or disallow padding lines between statements
             'off'
+        ],
+        'prefer-object-spread': [
+            // disallow using Object.assign with an object literal as the first argument and prefer the use of object spread
+            'error'
         ],
         'quote-props': [
             // require quotes around object literal property names
@@ -1504,11 +1523,11 @@ module.exports = {
         // Globals common to both Node and Browser
         es6: true,
         // enable all ECMAScript 6 features except for modules.
-        worker: false,
+        worker: true,
         // web workers global variables
         amd: false,
         // defines `require()` and `define()` as global variables as per the amd spec.
-        mocha: false,
+        mocha: true,
         // adds all of the Mocha testing global variables.
         jasmine: false,
         // adds all of the Jasmine testing global variables for version 1.3 and 2.0.
@@ -1516,7 +1535,7 @@ module.exports = {
         // Jest global variables
         phantomjs: false,
         // phantomjs global variables.
-        protractor: false,
+        protractor: true,
         // Protractor global variables.
         qunit: false,
         // QUnit global variables.
