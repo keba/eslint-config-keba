@@ -5,7 +5,7 @@
 - updated eslint to 5.0.1
 - added `max-classes-per-file`
 - changed `no-unused-vars` to error
-- added `max-lines-per-function`
+- added `max-lines-per-function` set to 200
 - added `prefer-object-spread`
 - updated globals to include `worker`, `mocha` and `protractor`
 - updated LICENSE to current year

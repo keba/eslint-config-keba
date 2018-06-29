@@ -940,7 +940,7 @@ module.exports = {
             // enforce a maximum number of lines of code in a function
             'error',
             {
-                max: 50,
+                max: 200,
                 skipBlankLines: true,
                 skipComments: true,
                 IIFEs: true
