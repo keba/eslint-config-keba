@@ -1,6 +1,6 @@
 // a set of test statements to show the style itself will be built over time...
 
-async function test() {
+async function testAllTheThings() {
     function something(orOther) {
         return orOther;
     }
@@ -33,7 +33,7 @@ async function test() {
     });
 }
 
-test()
+testAllTheThings()
     .then((anything) => {
         return console.log(`anything: ${anything}`); // eslint-disable-line no-console
     })
