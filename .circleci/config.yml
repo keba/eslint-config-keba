@@ -51,9 +51,9 @@ jobs:
           name: eslint validation source
           command: |
             mkdir -p ~/test_results/eslint
-            ./node_modules/eslint/bin/eslint.js -c package.json */**.js --format junit --output-file ~/reports/eslint.xml
+            ./node_modules/eslint/bin/eslint.js -c package.json **/*.js --format junit --output-file ~/test_results/eslint/eslint.xml
       - store_test_results:
-          path: ~/test_results/eslint
+          path: ~/test_results
       - save_cache:
           key: cache-{{ checksum "package.json" }}
           paths:
