@@ -1,7 +1,7 @@
 # Changes
 
 ### 1.3.1
-- added `h`, `x`, `y`, `id`, to` and `el` to `id-length`
+- added `h`, `x`, `y`, `to` and `el` to `id-length`
 - updated `id-match` to fit the new one character variable exceptions
 - `no-console` is now set to warn rather than error
 - updated babel-eslint to v8.2.6
