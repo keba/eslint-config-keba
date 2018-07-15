@@ -1,5 +1,13 @@
 # Changes
 
+### 1.3.1
+- added `h`, `x`, `y`, `id`, to` and `el` to `id-length`
+- updated `id-match` to fit the new one character variable exceptions
+- `no-console` is now set to warn rather than error
+- updated babel-eslint to v8.2.6
+- updated eslint to 5.1.0
+- added dependencies for html and vue plugins
+
 ### 1.3.0
 - renamed config to `eslint-config-keba` from `eslint-config-keba-web`
 - updated eslint to 5.0.1

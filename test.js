@@ -25,6 +25,14 @@ async function testAllTheThings() {
         console.log(keyName); // eslint-disable-line no-console
     }
 
+    const h = 'used by vue';
+    const x = 'used by vue';
+    const y = 'used by vue';
+    const el = 'used by vue';
+    const to = 'used by vue';
+
+    console.log(h + x + y + el + to);
+
     return await something('a value', (boolean) => {
         if (boolean === true) {
             return 'yay';

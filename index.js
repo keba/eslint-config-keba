@@ -37,7 +37,7 @@ module.exports = {
         ],
         'no-console': [
             // disallow use of `console` [recommended]
-            'error'
+            'warn'
         ],
         'no-constant-condition': [
             // disallow use of constant expressions in conditions [recommended]
@@ -808,17 +808,22 @@ module.exports = {
                 exceptions: [
                     '_',
                     'co',
-                    'id',
+                    'el',
                     'fs',
+                    'h',
+                    'id',
                     'pg',
-                    's3'
+                    's3',
+                    'to',
+                    'x',
+                    'y'
                 ]
             }
         ],
         'id-match': [
             // require identifiers to match the provided regular expression
             'error',
-            '^((([$A-Za-z]+)([A-Za-z0-9_-]+)*([A-Za-z0-9]))|_)$',
+            '^((([$A-Za-z]+)([A-Za-z0-9_-]+)*([A-Za-z0-9]))|[hxy_])$',
             {
                 properties: false
             }
@@ -1565,8 +1570,8 @@ module.exports = {
         // GreaseMonkey globals.
     },
     globals: {},
-    plugins: [ // eslint-disable-line array-bracket-newline
-        // "plugin1",
-        // "eslint-plugin-plugin2"
-    ] // eslint-disable-line array-bracket-newline
+    plugins: [
+        'html',
+        'vue'
+    ]
 };
