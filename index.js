@@ -1570,8 +1570,5 @@ module.exports = {
         // GreaseMonkey globals.
     },
     globals: {},
-    plugins: [
-        'html',
-        'vue'
-    ]
+    plugins: []
 };
