@@ -31,7 +31,7 @@ async function testAllTheThings() {
     const el = 'used by vue';
     const to = 'used by vue';
 
-    console.log(h + x + y + el + to);
+    console.log(h + x + y + el + to); // eslint-disable-line no-console
 
     return await something('a value', (boolean) => {
         if (boolean === true) {
@@ -43,7 +43,28 @@ async function testAllTheThings() {
 
 testAllTheThings()
     .then((anything) => {
-        return console.log(`anything: ${anything}`); // eslint-disable-line no-console
+        if (Boolean(anything) === true) {
+            if (Boolean(anything) === true) {
+                if (Boolean(anything) === true) {
+                    if (Boolean(anything) === true) {
+                        if (Boolean(anything) === true) {
+                            if (Boolean(anything) === true) {
+                                if (Boolean(anything) === true) {
+                                    if (Boolean(anything) === true) {
+                                        if (Boolean(anything) === true) {
+                                            if (Boolean(anything) === true) {
+                                                return console.log(`anything: ${anything}`); // eslint-disable-line no-console
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return console.log(`not anything: ${anything}`); // eslint-disable-line no-console
     })
     .catch((error) => {
         if (error) {

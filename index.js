@@ -552,10 +552,6 @@ module.exports = {
             'error',
             'always'
         ],
-        'no-catch-shadow': [
-            // disallow `catch` clause parameters from shadowing variables in the outer scope
-            'error'
-        ],
         'no-delete-var': [
             // disallow deleting variables [recommended]
             'error'
@@ -922,7 +918,7 @@ module.exports = {
         'max-depth': [
             // enforce a maximum depth that blocks can be nested
             'warn',
-            5
+            10
         ],
         'max-len': [
             // enforce a maximum line length
@@ -1022,6 +1018,10 @@ module.exports = {
             // disallow `Array` constructors
             'error'
         ],
+        'no-async-promise-executor': [
+            // disallow using an async function as a Promise executor
+            'error'
+        ],
         'no-bitwise': [
             // disallow bitwise operators
             'error',
@@ -1040,6 +1040,10 @@ module.exports = {
         ],
         'no-lonely-if': [
             // disallow `if` as the only statement in  `else` blocks
+            'error'
+        ],
+        'no-misleading-character-class': [
+            // disallow characters which are made with multiple code points in character class syntax
             'error'
         ],
         'no-mixed-operators': [
@@ -1243,6 +1247,10 @@ module.exports = {
             'single',
             'avoid-escape'
         ],
+        'require-atomic-updates': [
+            // disallow assignments that can lead to race conditions due to usage of `await` or `yield`
+            'error'
+        ],
         'require-jsdoc': [
             // require JSDoc comments
             'off',
@@ -1253,6 +1261,10 @@ module.exports = {
                     MethodDefinition: false
                 }
             }
+        ],
+        'require-unicode-regexp': [
+            // enforce the use of `u` flag on RegExp
+            'error'
         ],
         semi: [
             // require or disallow use of semicolons instead of ASI [fixable]
