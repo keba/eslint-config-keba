@@ -1,5 +1,14 @@
 # Changes
 
+### 1.3.3
+- updated `max-depth` to 10
+- updated `eslint` to 5.3.0
+- added `no-misleading-character-class` as an error condition
+- added `require-atomic-updates` as an error condition
+- added `no-async-promise-executor` as an error condition
+- added `require-unicode-regexp` as an error condition
+- removed `no-catch-shadow` as it was deprecated in 5.1.0
+
 ### 1.3.2
 - removed `eslint-plugin-html` and `eslint-plugin-vue` - they are added only when needed in individual projects
 - updated `eslint` to 5.2.0
