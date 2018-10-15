@@ -710,7 +710,9 @@ module.exports = {
             // enforce camelcase naming convention
             'error',
             {
-                properties: 'never'
+                properties: 'never',
+                ignoreDestructuring: false,
+                allow: []
             }
         ],
         'capitalized-comments': [
@@ -1134,7 +1136,10 @@ module.exports = {
         ],
         'no-tabs': [
             // disallow all tabs
-            'error'
+            'error',
+            {
+                allowIndentationTabs: false
+            }
         ],
         'no-ternary': [
             // disallow ternary operators

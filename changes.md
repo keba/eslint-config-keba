@@ -1,5 +1,9 @@
 # Changes
 
+### 1.3.4
+- updated eslint to 5.7.0
+- added new config for `camelcase` and `no-tabs`
+
 ### 1.3.3
 - updated `max-depth` to 10
 - updated `eslint` to 5.3.0
