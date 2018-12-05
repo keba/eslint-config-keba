@@ -1,5 +1,12 @@
 # Changes
 
+### 1.3.5
+- updated eslint to 5.9.0
+- removed jsdoc related rules due to eslint deprecating them
+- changed `array-element-newline` to `consistent`
+- node should be version 8.11.4 or higher
+- npm should be version 5.6.0 or higher
+
 ### 1.3.4
 - updated eslint to 5.7.0
 - added new config for `camelcase` and `no-tabs`

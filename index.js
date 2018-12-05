@@ -145,21 +145,6 @@ module.exports = {
             // require calls to `isNaN()` when checking for `NaN`
             'error'
         ],
-        'valid-jsdoc': [
-            // enforce valid JSDoc comments
-            'error',
-            {
-                prefer: {
-                    'return': 'return'
-                },
-                requireReturn: false,
-                requireParamDescription: false,
-                requireReturnDescription: false,
-                matchDescription: '.*',
-                requireReturnType: false,
-                preferType: {}
-            }
-        ],
         'valid-typeof': [
             // enforce comparing `typeof` expressions against valid strings [recommended]
             'error'
@@ -688,10 +673,7 @@ module.exports = {
         'array-element-newline': [
             // enforce line breaks after each array element
             'error',
-            {
-                multiline: true,
-                minItems: 2
-            }
+            'consistent'
         ],
         'block-spacing': [
             // enforce consistent spacing inside single-line blocks [fixable]
@@ -1255,17 +1237,6 @@ module.exports = {
         'require-atomic-updates': [
             // disallow assignments that can lead to race conditions due to usage of `await` or `yield`
             'error'
-        ],
-        'require-jsdoc': [
-            // require JSDoc comments
-            'off',
-            {
-                require: {
-                    FunctionDeclaration: true,
-                    ClassDeclaration: false,
-                    MethodDefinition: false
-                }
-            }
         ],
         'require-unicode-regexp': [
             // enforce the use of `u` flag on RegExp
