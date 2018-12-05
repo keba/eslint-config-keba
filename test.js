@@ -6,14 +6,18 @@ async function testAllTheThings() {
     }
 
     const oneKey = ['one'];
-    const twoKeys = [
-        'one',
-        'two'
-    ];
-    const someKeys = [
+    const twoKeys = ['one', 'two'];
+    const threeKeys = ['one', 'two', 'three'];
+    const anotherThreeKeys = [
         'one',
         'two',
         'three'
+    ];
+    const fourKeys = [
+        'one',
+        'two',
+        'three',
+        'four'
     ];
     for (let keyName of oneKey) {
         console.log(keyName); // eslint-disable-line no-console
@@ -21,7 +25,13 @@ async function testAllTheThings() {
     for (let keyName of twoKeys) {
         console.log(keyName); // eslint-disable-line no-console
     }
-    for (let keyName of someKeys) {
+    for (let keyName of threeKeys) {
+        console.log(keyName); // eslint-disable-line no-console
+    }
+    for (let keyName of anotherThreeKeys) {
+        console.log(keyName); // eslint-disable-line no-console
+    }
+    for (let keyName of fourKeys) {
         console.log(keyName); // eslint-disable-line no-console
     }
 
