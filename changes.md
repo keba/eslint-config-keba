@@ -2,7 +2,7 @@
 
 ### 1.3.6
 - updated node to 10.13.0 and npm to 6.4.1
-- updated eslint to 5.10.0
+- updated eslint to 5.12.0
 
 ### 1.3.5
 - updated eslint to 5.9.0
