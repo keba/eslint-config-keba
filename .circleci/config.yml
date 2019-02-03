@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/cibuild
   docker:
-    - image: node:10.13.0
+    - image: node:10.15.0
 
 jobs:
   build-test:
