@@ -35,13 +35,17 @@ async function testAllTheThings() {
         console.log(keyName); // eslint-disable-line no-console
     }
 
-    const h = 'used by vue';
-    const x = 'used by vue';
-    const y = 'used by vue';
-    const el = 'used by vue';
-    const to = 'used by vue';
+    const h = 'used by vue ';
+    const x = 'used by vue ';
+    const y = 'used by vue ';
+    const el = 'used by vue ';
+    const to = 'used by vue ';
 
     console.log(h + x + y + el + to); // eslint-disable-line no-console
+
+    // prefer-named-capture-group
+    const preferNamedCaptureGroup = /(?<id>test[s])/u;
+    console.log(preferNamedCaptureGroup.groups.id); // eslint-disable-line no-console
 
     return await something('a value', (boolean) => {
         if (boolean === true) {
