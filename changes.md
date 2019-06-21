@@ -1,5 +1,12 @@
 # Changes
 
+### 1.3.6
+- updated node to 10.16.0
+- updated npm to 6.9.0
+- updated babel-eslint to 10.0.2
+- updated eslint to 5.16.0
+- added `prefer-named-capture-group` as an error condition
+
 ### 1.3.5
 - updated eslint to 5.9.0
 - removed jsdoc related rules due to eslint deprecating them

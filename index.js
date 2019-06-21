@@ -1444,8 +1444,12 @@ module.exports = {
             'off'
         ],
         'prefer-destructuring': [
-            // require destructuring from arrays and/or objects
+            // require destructuring from arrays and/or objects [fixable]
             'off'
+        ],
+        'prefer-named-capture-group': [
+            // Suggest using named capture group in regular expression
+            'error'
         ],
         'prefer-numeric-literals': [
             // disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
