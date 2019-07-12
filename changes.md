@@ -1,7 +1,7 @@
 # Changes
 
 ### 1.3.7
-- 
+- updated eslint to 6.0.1
 
 ### 1.3.6
 - updated node to 10.16.0

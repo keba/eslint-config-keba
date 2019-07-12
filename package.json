@@ -15,11 +15,11 @@
     "homepage": "https://github.com/keba/eslint-config-keba#readme",
     "dependencies": {
         "babel-eslint": ">=10.0.2",
-        "eslint": ">=5.16.0"
+        "eslint": ">=6.0.1"
     },
     "peerDependencies": {
         "babel-eslint": ">=10.0.2",
-        "eslint": ">=5.16.0"
+        "eslint": ">=6.0.1"
     },
     "scripts": {
         "eslint": "./node_modules/eslint/bin/eslint.js -c package.json --ext .js .",
