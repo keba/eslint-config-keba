@@ -1,5 +1,11 @@
 # Changes
 
+### 1.3.7
+- updated babel-eslint to 10.0.3
+- updated eslint to 6.6.0
+
+** WORK IN PROGRESS - NOT UPDATED ON NPM AS YET **
+
 ### 1.3.6
 - updated node to 10.16.0
 - updated npm to 6.9.0
