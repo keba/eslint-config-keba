@@ -1,10 +1,25 @@
 # Changes
 
 ### 1.3.7
+- updated node to 12.14.0
+- updated npm to 6.13.4
 - updated babel-eslint to 10.0.3
-- updated eslint to 6.6.0
-
-** WORK IN PROGRESS - NOT UPDATED ON NPM AS YET **
+- updated eslint to 6.8.0
+- added `function-call-argument-newline` as a consistent condition
+- added `noInlineConfig` as a default false option
+- added `reportUnusedDisableDirectives` as a default true option
+- added `no-import-assign` with a default of error
+- added `prefer-regex-literals` with a default of error
+- added `default-param-last` with a default of error
+- updated `accessor-pairs` to include `enforceForClassMembers` option as true
+- updated `computed-property-spacing` to include `enforceForClassMembers` option as true
+- updated `use-isnan` to include `enforceForIndexOf` and `enforceForSwitchCase` options as default true
+- updated `no-unsafe-negation` to include `enforceForOrderingRelations` as true
+- updated `no-extra-parens` to include `conditionalAssign` option as false
+- added `grouped-accessor-pairs` with a default of error
+- added `no-constructor-return` with a default of error
+- added `no-setter-return` with a default of error
+- added `prefer-exponentiation-operator` with a default of error
 
 ### 1.3.6
 - updated node to 10.16.0
@@ -58,7 +73,7 @@
 - updated README.md for new repo name
 - updated npm test command
 - updated `test.js` for function name now that globals are updated
-- added CircleCI config 
+- added CircleCI config
 
 ### 1.2.3
 - `sort-imports` now off
