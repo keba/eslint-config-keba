@@ -5,6 +5,16 @@ async function testAllTheThings() {
         return orOther;
     }
 
+    function consistent(one, two, three) {
+        return one + two + three;
+    }
+
+    const consistent1 = consistent(1, 2, 3);
+    const consistent2 = consistent(1,
+        2,
+        3);
+    console.log('consistent' + consistent1 + consistent2); // eslint-disable-line no-console
+
     const oneKey = ['one'];
     const twoKeys = ['one', 'two'];
     const threeKeys = ['one', 'two', 'three'];

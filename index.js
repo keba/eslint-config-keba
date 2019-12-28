@@ -82,7 +82,10 @@ module.exports = {
         'no-extra-parens': [
             // disallow unnecessary parentheses
             'error',
-            'all'
+            'all',
+            {
+                conditionalAssign: false
+            }
         ],
         'no-extra-semi': [
             // disallow unnecessary semicolons [recommended, fixable]
@@ -113,6 +116,10 @@ module.exports = {
             // Disallow use of `Object.prototypes` builtins directly
             'error'
         ],
+        'no-setter-return': [
+            // Disallow returning values from setters
+            'error'
+        ],
         'no-regex-spaces': [
             // disallow multiple spaces in a regular expression literal [recommended]
             'error'
@@ -139,11 +146,18 @@ module.exports = {
         ],
         'no-unsafe-negation': [
             // disallow negating the left operand of relational operators [recommended], [fixable]
-            'error'
+            'error',
+            {
+                enforceForOrderingRelations: true
+            }
         ],
         'use-isnan': [
             // require calls to `isNaN()` when checking for `NaN`
-            'error'
+            'error',
+            {
+                enforceForIndexOf: true,
+                enforceForSwitchCase: true
+            }
         ],
         'valid-typeof': [
             // enforce comparing `typeof` expressions against valid strings [recommended]
@@ -157,7 +171,8 @@ module.exports = {
             'error',
             {
                 getWithoutSet: true,
-                setWithoutGet: true
+                setWithoutGet: true,
+                enforceForClassMembers: true
             }
         ],
         'array-callback-return': [
@@ -196,6 +211,10 @@ module.exports = {
             // require `default` case in `switch` statements
             'error'
         ],
+        'default-param-last': [
+            // enforce default parameters to be last
+            'error'
+        ],
         'dot-location': [
             // enforce consistent newlines before and after dots
             'error',
@@ -213,6 +232,10 @@ module.exports = {
             // require the use of `===` and `!==`
             'error',
             'smart'
+        ],
+        'grouped-accessor-pairs': [
+            // Require grouped accessor pairs in object literals and classes
+            'error'
         ],
         'guard-for-in': [
             // require `for-in` loops to include an `if` statement
@@ -304,6 +327,10 @@ module.exports = {
                 string: true,
                 allow: []
             }
+        ],
+        'no-import-assign': [
+            // disallow assigning to imported bindings
+            'error'
         ],
         'no-implicit-globals': [
             // disallow `var` and named `functions` in the global scope
@@ -734,7 +761,10 @@ module.exports = {
         'computed-property-spacing': [
             // enforce consistent spacing inside computed properties brackets [fixable]
             'error',
-            'never'
+            'never',
+            {
+                enforceForClassMembers: true
+            }
         ],
         'consistent-this': [
             // enforces consistent naming when capturing the current execution context
@@ -765,6 +795,11 @@ module.exports = {
             {
                 allowArrowFunctions: true
             }
+        ],
+        'function-call-argument-newline': [
+            // enforce line breaks between arguments of a function call
+            'error',
+            'consistent'
         ],
         'function-paren-newline': [
             // enforce consistent line breaks inside function parentheses
@@ -1016,6 +1051,10 @@ module.exports = {
         ],
         'no-continue': [
             // disallow `continue` statements
+            'error'
+        ],
+        'no-dupe-else-if': [
+            // Disallow duplicate conditions in `if-else-if` chains
             'error'
         ],
         'no-inline-comments': [
@@ -1384,6 +1423,10 @@ module.exports = {
             // disallow reassigning `const` variables [recommended]
             'error'
         ],
+        'no-constructor-return': [
+            // Disallow returning value in constructor
+            'error'
+        ],
         'no-dupe-class-members': [
             // disallow duplicate class members [recommended]
             'error'
@@ -1447,12 +1490,20 @@ module.exports = {
             // require destructuring from arrays and/or objects [fixable]
             'off'
         ],
+        'prefer-exponentiation-operator': [
+            // Disallow the use of `Math.pow` in favor of the `**` operator
+            'error'
+        ],
         'prefer-named-capture-group': [
             // Suggest using named capture group in regular expression
             'error'
         ],
         'prefer-numeric-literals': [
             // disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
+            'error'
+        ],
+        'prefer-regex-literals': [
+            // Disallow use of the RegExp constructor in favor of regular expressions literals
             'error'
         ],
         'prefer-rest-params': [
@@ -1508,6 +1559,9 @@ module.exports = {
             }
         ]
     },
+
+    noInlineConfig: false,
+    reportUnusedDisableDirectives: true,
 
     env: {
         browser: true,
