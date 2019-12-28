@@ -13,6 +13,9 @@
         "url": "https://github.com/keba/eslint-config-keba/issues"
     },
     "homepage": "https://github.com/keba/eslint-config-keba#readme",
+    "publishConfig": {
+        "registry": "https://npm.pkg.gihub.com"
+    },
     "dependencies": {
         "babel-eslint": ">=10.0.3",
         "eslint": ">=6.8.0"
