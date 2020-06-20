@@ -140,6 +140,10 @@ module.exports = {
             // disallow unreachable code after `return`, `throw`, `continue`, and `break` statement [recommended]
             'error'
         ],
+        'no-unreachable-loop': [
+            // disallow loops with a body that allows only one iteration
+            'error'
+        ],
         'no-unsafe-finally': [
             // disallow control flow statements in finally blocks
             'error'
@@ -209,6 +213,10 @@ module.exports = {
         ],
         'default-case': [
             // require `default` case in `switch` statements
+            'error'
+        ],
+        'default-case-last': [
+            // enforce default clauses in switch statements to be last
             'error'
         ],
         'default-param-last': [
@@ -417,6 +425,10 @@ module.exports = {
                 props: false
             }
         ],
+        'no-promise-executor-return': [
+            // disallow returning values from Promise executor functions
+            'error'
+        ],
         'no-proto': [
             // disallow usage of `__proto__` property
             'error'
@@ -480,6 +492,10 @@ module.exports = {
         ],
         'no-unused-labels': [
             // disallow unused labels [recommended]
+            'error'
+        ],
+        'no-useless-backreference': [
+            // disallow useless backreferences in regular expressions
             'error'
         ],
         'no-useless-call': [
@@ -572,6 +588,10 @@ module.exports = {
             // disallow labels that share a name with a variable
             'error'
         ],
+        'no-restricted-exports': [
+            // disallow specified names in exports
+            'off'
+        ],
         'no-restricted-globals': [
             // disallow specified global variables
             'error',
@@ -619,6 +639,7 @@ module.exports = {
             }
         ],
 
+        /* depreciated in eslint 7.0 - now must use eslint-plugin-node
         // Node.js and CommonJS
         // These rules relate to code running in Node.js, or in browsers with CommonJS
         'callback-return': [
@@ -676,6 +697,7 @@ module.exports = {
             // disallow synchronous methods
             'error'
         ],
+        */
 
         // Stylistic Issues
         // These rules relate to style guidelines, and are therefore quite subjective
@@ -1063,6 +1085,10 @@ module.exports = {
         ],
         'no-lonely-if': [
             // disallow `if` as the only statement in  `else` blocks
+            'error'
+        ],
+        'no-loss-of-precision': [
+            // disallow number literals that lose precision
             'error'
         ],
         'no-misleading-character-class': [
