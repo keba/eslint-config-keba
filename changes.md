@@ -1,5 +1,29 @@
 # Changes
 
+### 1.3.8
+- updated node to 12.18.0
+- updated npm to 6.14.4
+- updated babel-eslint to 10.1.0
+- updated eslint to 7.3.0
+- added `default-case-last` rule as an error condition
+- added `no-useless-backreferenc` rule as an error condition
+- added `no-restricted-exports` as a default off option
+- depreciated node.js/commonJS rules in favour of implementing the `eslint-plugin-node` package
+    - `callback-return`
+    - `global-require`
+    - `handle-callback-err`
+    - `no-buffer-constructor`
+    - `no-mixed-requires`
+    - `no-new-require`
+    - `no-path-concat`
+    - `no-process-env`
+    - `no-process-exit`
+    - `no-restricted-modules`
+    - `no-sync`
+- added `no-loss-of-precision` rule as an error condition
+- added `no-promise-executor-return` rule as an error condition
+- added `no-unreachable-loop` rule as an error condition
+
 ### 1.3.7
 - updated node to 12.14.0
 - updated npm to 6.13.4

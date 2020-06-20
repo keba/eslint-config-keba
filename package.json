@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-keba",
-    "version": "1.3.7",
+    "version": "1.3.8",
     "description": "An ESLint config alternative - don't use if you don't like it...",
     "main": "index.js",
     "repository": {
@@ -14,12 +14,12 @@
     },
     "homepage": "https://github.com/keba/eslint-config-keba#readme",
     "dependencies": {
-        "babel-eslint": ">=10.0.3",
-        "eslint": ">=6.8.0"
+        "babel-eslint": ">=10.1.0",
+        "eslint": ">=7.3.0"
     },
     "peerDependencies": {
-        "babel-eslint": ">=10.0.3",
-        "eslint": ">=6.8.0"
+        "babel-eslint": ">=10.1.0",
+        "eslint": ">=7.3.0"
     },
     "scripts": {
         "eslint": "./node_modules/eslint/bin/eslint.js -c package.json --ext .js .",
@@ -31,8 +31,8 @@
         "eslintconfig"
     ],
     "engines": {
-        "node": ">=12.14.0",
-        "npm": ">=6.13.4"
+        "node": ">=12.18.0",
+        "npm": ">=6.14.4"
     },
     "eslintConfig": {
         "extends": [
