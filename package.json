@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-keba",
-    "version": "1.3.9",
+    "version": "1.3.10",
     "description": "An ESLint config alternative - don't use if you don't like it...",
     "main": "index.js",
     "repository": {
