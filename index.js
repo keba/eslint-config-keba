@@ -85,6 +85,10 @@ module.exports = {
             // require `default` case in `switch` statements
             'error'
         ],
+        'default-case-last': [
+            // enforce default clauses in switch statements to be last
+            'error'
+        ],
         'default-param-last': [
             // enforce default parameters to be last
             'error'
@@ -390,6 +394,10 @@ module.exports = {
             // disallow labels that share a name with a variable
             'error'
         ],
+        'no-restricted-exports': [
+            // disallow specified names in exports
+            'off'
+        ],
         'no-restricted-globals': [
             // disallow specified global variables
             'error',
@@ -437,6 +445,7 @@ module.exports = {
             }
         ],
 
+        /* depreciated in eslint 7.0 - now must use eslint-plugin-node
         // Node.js and CommonJS
         // These rules relate to code running in Node.js, or in browsers with CommonJS
         'callback-return': [
@@ -494,6 +503,7 @@ module.exports = {
             // disallow synchronous methods
             'error'
         ],
+        */
 
         // Stylistic Issues
         // These rules relate to style guidelines, and are therefore quite subjective
@@ -881,6 +891,10 @@ module.exports = {
         ],
         'no-lonely-if': [
             // disallow `if` as the only statement in  `else` blocks
+            'error'
+        ],
+        'no-loss-of-precision': [
+            // disallow number literals that lose precision
             'error'
         ],
         'no-misleading-character-class': [

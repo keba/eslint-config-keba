@@ -16,6 +16,6 @@ Please reference the [changes.md](/changes.md) file.
 
 ### License
 
-Copyright 2018 keba
+Copyright 2018-2020 keba
 
 MIT License
