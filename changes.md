@@ -1,5 +1,15 @@
 # Changes
 
+### 1.3.8
+20210511
+- updated node to 14.16.1
+- updated npm to 6.14.12
+- remoted babel-eslint
+- updated eslint to 7.26.0
+- set config to use eslint:recommended
+- removed recommended options that weren't already overwritten
+- tidied up some other options if they were no longer needed to be specified
+
 ### 1.3.7
 - updated node to 12.14.0
 - updated npm to 6.13.4

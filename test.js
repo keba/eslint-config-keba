@@ -1,3 +1,4 @@
+'use strict';
 // a set of test statements to show the style itself will be built over time...
 
 async function testAllTheThings() {
@@ -13,7 +14,7 @@ async function testAllTheThings() {
     const consistent2 = consistent(1,
         2,
         3);
-    console.log('consistent' + consistent1 + consistent2); // eslint-disable-line no-console
+    console.log('consistent ' + consistent1 + consistent2); // eslint-disable-line no-console
 
     const oneKey = ['one'];
     const twoKeys = ['one', 'two'];
@@ -54,8 +55,8 @@ async function testAllTheThings() {
     console.log(h + x + y + el + to); // eslint-disable-line no-console
 
     // prefer-named-capture-group
-    const preferNamedCaptureGroup = /(?<id>test[s])/u;
-    console.log(preferNamedCaptureGroup.groups.id); // eslint-disable-line no-console
+    const preferNamedCaptureGroup = /(?<ids>test[s])/u;
+    console.log(preferNamedCaptureGroup.exec('tests').groups.ids); // eslint-disable-line no-console
 
     return await something('a value', (boolean) => {
         if (boolean === true) {
