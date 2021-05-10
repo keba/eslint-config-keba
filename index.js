@@ -1,151 +1,25 @@
-// http://eslint.org/docs/rules/
-
-// Rules in ESLint are grouped by category to help you understand their purpose.
-
-// No rules are enabled by default. The `"extends": "eslint:recommended"` property in a configuration file enables rules that report common problems, which have `[recommended]` added to their comments below
-
-// The `--fix` option on the command line automatically fixes problems (currently mostly whitespace) reported by rules which have `[fixable]` added to their comments below
+'use strict';
 
 module.exports = {
-    parser: 'babel-eslint',
+    'extends': ['eslint:recommended'],
+    parserOptions: {
+        ecmaVersion: 2018
+    },
     rules: {
-        // Possible Errors
-        // These rules relate to possible syntax or logic errors in JavaScript code
-        'for-direction': [
-            // enforce "for" loop update clause moving the counter in the right direction
-            'error'
-        ],
-        'getter-return': [
-            // enforces that a return statement is present in property getters
-            'error',
-            {
-                allowImplicit: false
-            }
-        ],
         'no-await-in-loop': [
             // disallow `await` inside of loops
             'off'
-        ],
-        'no-compare-neg-zero': [
-            // disallow comparing against -0
-            'error'
-        ],
-        'no-cond-assign': [
-            // disallow assignment operators in conditional expressions [recommended, fixable]
-            'error',
-            'except-parens'
         ],
         'no-console': [
             // disallow use of `console` [recommended]
             'warn'
         ],
-        'no-constant-condition': [
-            // disallow use of constant expressions in conditions [recommended]
-            'error'
-        ],
-        'no-control-regex': [
-            // disallow control characters in regular expressions [recommended]
-            'error'
-        ],
-        'no-debugger': [
-            // disallow use of `debugger` [recommended]
-            'error'
-        ],
-        'no-dupe-args': [
-            // disallow duplicate arguments in `function` definitions [recommended]
-            'error'
-        ],
-        'no-dupe-keys': [
-            // disallow duplicate keys when creating object literals [recommended]
-            'error'
-        ],
-        'no-duplicate-case': [
-            // disallow a duplicate case labels [recommended]
-            'error'
-        ],
-        'no-empty': [
-            // disallow empty block statements [recommended]
-            'error'
-        ],
-        'no-empty-character-class': [
-            // disallow disallow the use of empty character classes in regular expressions [recommended]
-            'error'
-        ],
-        'no-ex-assign': [
-            // disallow reassigning exceptions in `catch` clauses [recommended]
-            'error'
-        ],
-        'no-extra-boolean-cast': [
-            // disallow unnecessary boolean casts [recommended]
-            'error'
-        ],
-        'no-extra-parens': [
-            // disallow unnecessary parentheses
-            'error',
-            'all',
-            {
-                conditionalAssign: false
-            }
-        ],
-        'no-extra-semi': [
-            // disallow unnecessary semicolons [recommended, fixable]
-            'error'
-        ],
-        'no-func-assign': [
-            // disallow reassigning `function` declarations [recommended]
-            'error'
-        ],
-        'no-inner-declarations': [
-            // disallow `function` or `var` declarations in nested blocks [recommended]
-            'error',
-            'functions'
-        ],
-        'no-invalid-regexp': [
-            // disallow invalid regular expression strings in `RegExp` constructors [recommended]
-            'error'
-        ],
-        'no-irregular-whitespace': [
-            // disallow irregular whitespace outside of strings and comments [recommended]
-            'error'
-        ],
-        'no-obj-calls': [
-            // disallow calling global object properties as functions [recommended]
-            'error'
-        ],
-        'no-prototype-builtins': [
-            // Disallow use of `Object.prototypes` builtins directly
-            'error'
-        ],
-        'no-setter-return': [
-            // Disallow returning values from setters
-            'error'
-        ],
-        'no-regex-spaces': [
-            // disallow multiple spaces in a regular expression literal [recommended]
-            'error'
-        ],
-        'no-sparse-arrays': [
-            // disallow sparse arrays [recommended]
-            'error'
-        ],
         'no-template-curly-in-string': [
             // disallow template literal placeholder syntax in regular strings
             'error'
         ],
-        'no-unexpected-multiline': [
-            // disallow confusing multi-line expressions [recommended]
-            'error'
-        ],
         'no-unreachable': [
-            // disallow unreachable code after `return`, `throw`, `continue`, and `break` statement [recommended]
-            'error'
-        ],
-        'no-unreachable-loop': [
-            // disallow loops with a body that allows only one iteration
-            'error'
-        ],
-        'no-unsafe-finally': [
-            // disallow control flow statements in finally blocks
+            // disallow unreachable code after `return`, `throw`, `continue`, and `break` statement
             'error'
         ],
         'no-unsafe-negation': [
@@ -162,10 +36,6 @@ module.exports = {
                 enforceForIndexOf: true,
                 enforceForSwitchCase: true
             }
-        ],
-        'valid-typeof': [
-            // enforce comparing `typeof` expressions against valid strings [recommended]
-            'error'
         ],
 
         // Best Practices
@@ -207,7 +77,7 @@ module.exports = {
             'off'
         ],
         curly: [
-            // enforce consistent brace style for all control statements
+            // require following curly brace conventions
             'error',
             'all'
         ],
@@ -262,10 +132,6 @@ module.exports = {
             // disallow the use of `arguments.caller` or `arguments.callee`
             'error'
         ],
-        'no-case-declarations': [
-            // disallow lexical declarations in case clauses [recommended]
-            'error'
-        ],
         'no-div-regex': [
             // disallow division operators explicitly at beginning of regular expression
             'error'
@@ -280,10 +146,6 @@ module.exports = {
             {
                 allow: []
             }
-        ],
-        'no-empty-pattern': [
-            // disallow empty destructuring patterns [recommended]
-            'error'
         ],
         'no-eq-null': [
             // disallow `null` comparisons without type-checking operators
@@ -309,10 +171,6 @@ module.exports = {
         ],
         'no-extra-label': [
             // disallow unnecessary labels
-            'error'
-        ],
-        'no-fallthrough': [
-            // disallow fallthrough of `case` statements [recommended]
             'error'
         ],
         'no-floating-decimal': [
@@ -368,20 +226,6 @@ module.exports = {
             // disallow unnecessary nested blocks
             'error'
         ],
-        'no-loop-func': [
-            // disallow `function` declarations and expressions inside loop statements
-            'off'
-        ],
-        'no-magic-numbers': [
-            // disallow magic numbers
-            'off',
-            {
-                ignore: [],
-                ignoreArrayIndexes: false,
-                enforceConst: false,
-                detectObjects: false
-            }
-        ],
         'no-multi-spaces': [
             // disallow multiple spaces [fixable]
             'error',
@@ -410,35 +254,13 @@ module.exports = {
             // disallow `new` operators with the `String`, `Number`, and `Boolean` objects
             'error'
         ],
-        'no-octal': [
-            // disallow octal literals [recommended]
-            'error'
-        ],
         'no-octal-escape': [
             // disallow octal escape sequences in string literals`
-            'error'
-        ],
-        'no-param-reassign': [
-            // disallow reassigning `function` parameters
-            'off',
-            {
-                props: false
-            }
-        ],
-        'no-promise-executor-return': [
-            // disallow returning values from Promise executor functions
             'error'
         ],
         'no-proto': [
             // disallow usage of `__proto__` property
             'error'
-        ],
-        'no-redeclare': [
-            // disallow `var` redeclaration [recommended]
-            'error',
-            {
-                builtinGlobals: true
-            }
         ],
         'no-restricted-properties': [
             // disallow certain object properties
@@ -460,10 +282,6 @@ module.exports = {
         ],
         'no-script-url': [
             // disallow `javascript:` urls
-            'error'
-        ],
-        'no-self-assign': [
-            // disallow assignments where both sides are exactly the same [recommended]
             'error'
         ],
         'no-self-compare': [
@@ -490,14 +308,6 @@ module.exports = {
                 allowTernary: false
             }
         ],
-        'no-unused-labels': [
-            // disallow unused labels [recommended]
-            'error'
-        ],
-        'no-useless-backreference': [
-            // disallow useless backreferences in regular expressions
-            'error'
-        ],
         'no-useless-call': [
             // disallow unnecessary calls to `.call()` and `.apply()`
             'error'
@@ -522,7 +332,7 @@ module.exports = {
             // disallow specified warning terms in comments
             'warn',
             {
-                terms: ['todo'],
+                terms: ['todo', 'fixme'],
                 location: 'anywhere'
             }
         ],
@@ -579,10 +389,6 @@ module.exports = {
             // enforce or disallow initializations in `var` declarations
             'error',
             'always'
-        ],
-        'no-delete-var': [
-            // disallow deleting variables [recommended]
-            'error'
         ],
         'no-label-var': [
             // disallow labels that share a name with a variable
@@ -1139,10 +945,6 @@ module.exports = {
                 allowSamePrecedence: true
             }
         ],
-        'no-mixed-spaces-and-tabs': [
-            // disallow mixed spaces and tabs for indentation [recommended]
-            'error'
-        ],
         'no-multi-assign': [
             // disallow use of chained assignment expressions
             'error'
@@ -1425,10 +1227,6 @@ module.exports = {
                 after: true
             }
         ],
-        'constructor-super': [
-            // require `super()` calls in constructors [recommended]
-            'error'
-        ],
         'generator-star-spacing': [
             // enforce consistent spacing around `*` operators in generator functions [fixable]
             'error',
@@ -1437,42 +1235,22 @@ module.exports = {
                 after: true
             }
         ],
-        'no-class-assign': [
-            // disallow reassigning class members [recommended]
-            'error'
-        ],
         'no-confusing-arrow': [
             // disallow arrow functions where they could be confused with comparisons
-            'error'
-        ],
-        'no-const-assign': [
-            // disallow reassigning `const` variables [recommended]
             'error'
         ],
         'no-constructor-return': [
             // Disallow returning value in constructor
             'error'
         ],
-        'no-dupe-class-members': [
-            // disallow duplicate class members [recommended]
-            'error'
-        ],
         'no-duplicate-imports': [
             // disallow duplicate module imports
-            'error'
-        ],
-        'no-new-symbol': [
-            // disallow `new` operators with the `Symbol` object [recommended]
             'error'
         ],
         'no-restricted-imports': [
             // disallow specified modules when loaded by `import`
             'error',
             'alphabetSoup'
-        ],
-        'no-this-before-super': [
-            // disallow `this`/`super` before calling `super()` in constructors [recommended]
-            'error'
         ],
         'no-useless-computed-key': [
             // disallow unnecessary computed property keys in object literals
