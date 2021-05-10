@@ -18,7 +18,6 @@
     },
     "peerDependencies": {
         "eslint": ">=7.26.0"
-
     },
     "scripts": {
         "eslint": "./node_modules/eslint/bin/eslint.js -c package.json --ext .js .",
