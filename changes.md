@@ -1,13 +1,18 @@
 # Changes
 
-### 1.3.10
-- todo...
+### 1.4.0
+- updated node to 18.16.0
+- updated npm to 9.5.1
+- updated eslint to 8.41.0
+- changed `no-restricted-imports` rule to `off`
+- added `no-unused-private-class-members` rule as an error condition
+- added 'no-new-native-nonconstructor` rule as an error condition
 
 ### 1.3.9
 20210511
 - updated node to 14.16.1
 - updated npm to 6.14.12
-- remoted babel-eslint
+- removed babel-eslint
 - updated eslint to 7.26.0
 - set config to use eslint:recommended
 - removed recommended options that weren't already overwritten

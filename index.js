@@ -250,6 +250,10 @@ module.exports = {
             // disallow `new` operators with the `Function` object
             'error'
         ],
+        'no-new-native-nonconstructor': [
+            // disallow `new` operators with the `Symbol` object
+            'error'
+        ],
         'no-new-wrappers': [
             // disallow `new` operators with the `String`, `Number`, and `Boolean` objects
             'error'
@@ -307,6 +311,10 @@ module.exports = {
                 allowShortCircuit: false,
                 allowTernary: false
             }
+        ],
+        'no-unused-private-class-members': [
+            // disallow unused private class members
+            'error'
         ],
         'no-useless-call': [
             // disallow unnecessary calls to `.call()` and `.apply()`
@@ -433,7 +441,8 @@ module.exports = {
             'error',
             {
                 vars: 'all',
-                args: 'after-used'
+                args: 'after-used',
+                caughtErrors: 'none'
             }
         ],
         'no-use-before-define': [
@@ -1239,6 +1248,10 @@ module.exports = {
             // disallow arrow functions where they could be confused with comparisons
             'error'
         ],
+        'no-constant-binary-expression': [
+            // disallow constant expressions in conditions
+            'error'
+        ],
         'no-constructor-return': [
             // Disallow returning value in constructor
             'error'
@@ -1249,8 +1262,7 @@ module.exports = {
         ],
         'no-restricted-imports': [
             // disallow specified modules when loaded by `import`
-            'error',
-            'alphabetSoup'
+            'off'
         ],
         'no-useless-computed-key': [
             // disallow unnecessary computed property keys in object literals
